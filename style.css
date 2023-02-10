@@ -20,7 +20,6 @@
     width: 100%;
 }
 
-
 .ex-3-square {
     width: 100px;
     height: 100px;
@@ -61,20 +60,21 @@
     width: 60px;
     height: 60px;
     background: red;
+    transition: all 1s;
 }
 
 .ex-5-square:hover {
-    width: 80px;
-    height: 80px;
-    margin: 20px;
-    transition: all 1s;
+    /* width: 65px;
+    height: 65px;
+    margin: 15px; */
+    scale: 2;
 }
 
 .ex-5-square:active {
-    width: 40px;
+    /* width: 40px;
     height: 40px;
-    margin: 20px;
-    transition: all 1s;
+    margin: 20px; */
+    scale: .5;
 }
 
 .ex-6-img, .ex-7-img, .ex-8-img {
@@ -86,12 +86,12 @@
 }
 
 .ex-7-img {
-    animation-name: FX;
+    animation-name: FX7;
     animation-duration: 5s;
     animation-iteration-count: 5;
 }
 
-@keyframes FX {
+@keyframes FX7 {
     0% {
         filter: grayscale(0);
     }
@@ -110,12 +110,12 @@
 }
 
 .ex-8-img {
-    animation-name: FX2;
+    animation-name: FX8;
     animation-duration: 5s;
     animation-iteration-count: 5;
 }
 
-@keyframes FX2 {
+@keyframes FX8 {
     0% {
         filter: grayscale(0);
         border-radius: 0%;
@@ -138,14 +138,57 @@
     }
 }
 
-
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    animation-name: FX9;
+    animation-duration: 3s;
+    animation-iteration-count: 5;
+}
+
+@keyframes FX9 {
+    0% {
+        filter: grayscale(0);
+        border-radius: 0%;
+        scale: 1;
+    }
+    25% {
+        filter: grayscale(.25);
+        border-radius: 5%;
+        scale: .95;
+    }
+    50% {
+        filter: grayscale(.5);
+        border-radius: 10%;
+        scale: .9;
+    }
+    75% {
+        filter: sepia(.75);
+        border-radius: 15%;
+        scale: .85;
+    }
+    100% {
+        filter: sepia(1);
+        border-radius: 20%;
+        scale: .80;
+    }
+
 }
 .ex-10-icon {
     font-size: 60px;
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-timing-function: infinite;
+    
 }
+
+@keyframes rotation {
+    0‰ {
+        transform: rotate: (1turn);
+    }
+}
+
+
 .ex-11-icon {
     font-size: 60px;
 }
