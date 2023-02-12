@@ -39,7 +39,7 @@
 
 .ex-4-square {
     animation-name: disappear;
-    animation-iteration-count: 5;
+    animation-iteration-count: infinite;
     animation-duration: 2.5s;
 }
 
@@ -89,7 +89,7 @@
 .ex-7-img {
     animation-name: FX7;
     animation-duration: 5s;
-    animation-iteration-count: 5;
+    animation-iteration-count: infinite;
 }
 
 @keyframes FX7 {
@@ -113,7 +113,7 @@
 .ex-8-img {
     animation-name: FX8;
     animation-duration: 5s;
-    animation-iteration-count: 5;
+    animation-iteration-count: infinite;
 }
 
 @keyframes FX8 {
@@ -144,7 +144,7 @@
     width: 400px;
     animation-name: FX9;
     animation-duration: 3s;
-    animation-iteration-count: 5;
+    animation-iteration-count: infinite;
 }
 
 @keyframes FX9 {
@@ -171,7 +171,7 @@
     100% {
         filter: sepia(1);
         border-radius: 20%;
-        scale: .80;
+        scale: .8;
     }
 
 }
@@ -180,19 +180,39 @@
     animation-name: rotation;
     animation-duration: 2s;
     animation-timing-function: infinite;
-    
 }
 
 @keyframes rotation {
     0‰ {
-        transform: rotate: (1turn);
+        transform: rotate(1turn);
+    }
+}
+
+.ex-11-icon:hover {
+    font-size: 60px;
+    animation-name: rotation-2;
+    animation-duration: 5s;
+}
+
+@keyframes rotation-2 {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(0);
     }
 }
 
 
-.ex-11-icon {
-    font-size: 60px;
-}
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
