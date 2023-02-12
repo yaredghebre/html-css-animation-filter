@@ -212,7 +212,6 @@
     }
 }
 
-
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -226,6 +225,8 @@
     text-align: center;
     text-decoration: none;
 }
+
+
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
     top: -10px;
