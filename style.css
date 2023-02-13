@@ -191,18 +191,13 @@
 .ex-11-icon:hover {
     font-size: 60px;
     animation-name: rotation-2;
-    animation-duration: 5s;
+    animation-duration: 2s;
+    animation-duration: linear ;
 }
 
 @keyframes rotation-2 {
     0% {
         transform: rotate(0);
-    }
-    25% {
-        transform: rotate(90deg);
-    }
-    50% {
-        transform: rotate(180deg);
     }
     75%{
         transform: rotate(270deg);
